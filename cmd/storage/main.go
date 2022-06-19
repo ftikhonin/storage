@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"log"
 
 	//"github.com/ftikhonin/storage/internal/storage"
 	"storage/internal/storage"
@@ -23,6 +24,11 @@ func main() {
 	if e != nil {
 		fmt.Println(e)
 	}
+
 	st := storage.NewStorage()
-	fmt.Println("it works", st)
+	file, err := st.Upload("test.txt", []byte("hello"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("it works", file)
 }
