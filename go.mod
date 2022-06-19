@@ -1,5 +1,4 @@
-// module github.com/ftikhonin/storage
-module storage
+module github.com/ftikhonin/storage
 
 go 1.17
 
