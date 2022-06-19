@@ -2,7 +2,6 @@ package storage
 
 import (
 	"fmt"
-	// "storage/internal/file"
 
 	"github.com/ftikhonin/storage/internal/file"
 	"github.com/google/uuid"
