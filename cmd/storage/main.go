@@ -31,4 +31,13 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println("it works", file)
+
+	RestoredFile, err := st.GetByID(file.ID)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("it is restored", RestoredFile)
+	fmt.Println("file content: ", string(file.Data))
+
 }
