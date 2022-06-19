@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	//"github.com/ftikhonin/storage/internal/storage"
-	"storage/internal/storage"
+	"github.com/ftikhonin/storage/internal/storage"
+	//"storage/internal/storage"
 )
 
 func Hello() (string, bool) {
